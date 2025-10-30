@@ -5,5 +5,13 @@
     <body>
         <canvas id="myCanvas" height="600" width = "600"></canvas>
         <script src="challenges.js"></script>
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            
+            pencil.beginPath();
+            pencil.arc(95, 50, 40, 0, 2 * Math.PI);
+            pencil.stroke();
+            </script>
     </body>
 </html>
