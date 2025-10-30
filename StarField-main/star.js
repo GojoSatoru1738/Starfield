@@ -4,6 +4,9 @@ export class Star {
     y = 50;
 
     draw() {
+
+        let canvas = document.getElementById("myCanvas");
+let pencil = canvas.getContext("2d"); 
         ctx.beginPath();
     ctx.arc(95, 50, 40, 0, 2 * Math.PI);
     ctx.fillStyle = "red";
