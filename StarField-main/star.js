@@ -1,20 +1,20 @@
 export class Star {
 
+
     x = 50;
     y = 50;
+    pencil;
 
-    draw() {
-
-        let canvas = document.getElementById("myCanvas");
-let pencil = canvas.getContext("2d"); 
-        ctx.beginPath();
-    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-    ctx.fillStyle = "red";
-        ctx.fill();
-    ctx.lineWidth = 4;
-    ctx.strokeStyle = "blue";
-    ctx.stroke();
+    constructor(pencil) {
+        this.pencil = pencil;
     }
 
+    draw(pencil) {
+        this.pencil.beginPath();
+        this.pencil.arc(95, 50, 40, 0, 2 * Math.PI);
+        this.pencil.fillStyle = "red";
+        this.pencil.fill();
+        this.pencil.closePath();
+    }
 
 }
